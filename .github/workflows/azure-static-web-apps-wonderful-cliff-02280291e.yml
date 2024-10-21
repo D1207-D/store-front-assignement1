@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     env: 
-      VUE_APP_ORDER_SERVICE_URL: https://order-service-asgn1-fngsgygpakftcdh6.canadacentral-01.azurewebsites.net
-      VUE_APP_PRODUCT_SERVICE_URL: https://productservice-assignment1-bxbze8fzf5dkahb6.canadacentral-01.azurewebsites.net/
+      VUE_APP_ORDER_SERVICE_URL: https://order-service-asgn1-fngsgygpakftcdh6.canadacentral-01.azurewebsites.net/
+      VUE_APP_PRODUCT_SERVICE_URL: https://productservice-assignment1-bxbze8fzf5dkahb6.canadacentral-01.azurewebsites.net/
     steps:
       - uses: actions/checkout@v3
         with:
@@ -45,5 +45,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_CLIFF_02280291E }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB APPS_API_TOKEN_WONDERFUL_CLIFF_02280291E }}
           action: "close"
